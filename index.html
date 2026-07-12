@@ -513,8 +513,13 @@ animate();
 const video = document.getElementById("myVideo");
 
 video.addEventListener("ended", () => {
-
+    // ينفذ عند انتهاء الفيديو إذا أردت
 });
+
+video.addEventListener("pause", () => {
+    video.play();
+});
+    
 </script>
 
 
