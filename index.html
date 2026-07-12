@@ -249,10 +249,9 @@ max-width:500px;
 
 <video
 id="myVideo"
-autoplay
 controls
 playsinline
-preload="auto"
+muted
 style="width:100%; height:auto; border-radius:10px;">
     <source src="video.mp4" type="video/mp4">
 </video>
@@ -455,10 +454,11 @@ successOsc.stop(audioCtx.currentTime+0.25);
 
 giftCard.style.display="block";
 
+video.play();
+
 },3500);
 
 };
-
 
 const c=document.getElementById('c');
 const ctx=c.getContext('2d');
